@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package mails;
+
+import "mail_types.proto";
+
+option go_package="/mails";
+
+service MailService {
+  rpc send_order_info(Order) returns (MailReply);
+}
+

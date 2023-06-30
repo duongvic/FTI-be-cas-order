@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package order;
+
+import "order_types.proto";
+
+option go_package="/order";
+
+service OrderService {
+  rpc get_order(OrderRequest) returns (Order);
+  rpc approve_order(ApprovalRequest) returns (Approval);
+}

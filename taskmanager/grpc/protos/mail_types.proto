@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package mails;
+
+option go_package="/mails";
+
+message MailReply {
+  bool status = 1;
+}
+
+message Order {
+  string contract_no = 1;
+  string code = 2;
+  string username = 3;
+  string password = 4;
+  string customer_name = 5;
+  string customer_email = 6;
+  repeated Compute computes = 7;
+}
+
+message Compute {
+  string email = 1;
+  string user_name = 2;
+  string password = 3;
+  string public_ip = 4;
+  int32 ssh_port = 5;
+  int32 cpu = 6;
+  int32 ram = 7;
+  int32 disk = 8;
+  int32 order_id=9;
+  string order_code=10;
+  string order_creator=11;
+}

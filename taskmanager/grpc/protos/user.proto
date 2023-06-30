@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package grpc_user;
+
+import "user_types.proto";
+
+option go_package="/user";
+
+service UserService {
+  rpc verify_token(TokenRequest) returns (User);
+  rpc get_user(UserRequest) returns (UserProfile);
+  rpc get_all_users(TokenRequest) returns (UserProfiles);
+}

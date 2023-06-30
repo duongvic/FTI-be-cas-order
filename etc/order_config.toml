@@ -1,0 +1,37 @@
+# [mariadb]
+# address  = "127.0.0.1"
+# username = "root"
+# password = "Asdasd123"
+# port     = 3306
+# database = "casorder"
+
+[mariadb]
+address  = "127.0.0.1"
+username = "duongnh"
+password = "123456"
+port     = 3306
+database = "casorder"
+[server]
+ip = "127.0.0.1"
+port = 8090
+[redis]
+address = "127.0.0.1"
+port = 6379
+[environment]
+mode = "dev"
+[logging]
+mode = "debug"
+logFolder = "logs\\"
+logFile = "casorder.log"
+[token]
+key="secret"
+expire = 2
+[grpc]
+host = "127.0.0.1"
+port = "55051"
+[miq_grpc]
+host = "0.0.0.0"
+port = "50052"
+[mail_grpc]
+host = "192.168.29.39"
+port = "50051"

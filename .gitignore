@@ -1,0 +1,9 @@
+.vscode
+bin/*
+__debug_bin
+*/__debug_bin
+.idea
+go.sum
+
+go-lib-core
+logs/*
